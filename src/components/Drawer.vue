@@ -9,14 +9,14 @@
         <v-list>
           <v-list-item class="px-3">
             <v-list-item-avatar>
-              <v-img src="https://media-exp1.licdn.com/dms/image/C4D03AQGuK-gMADwhyw/profile-displayphoto-shrink_400_400/0/1613523800434?e=1643846400&v=beta&t=udSTbvgHBy-uGR3Uq2y-q3Ewb5VLK2sB4U_LfqaGQ3w"></v-img>
+              <v-img src="https://images-na.ssl-images-amazon.com/images/I/71aH-U9+EfL.png"></v-img>
             </v-list-item-avatar>
           </v-list-item>
 
           <v-list-item link>
             <v-list-item-content>
               <v-list-item-title class="text-h12">
-                Lucas Santos
+                Good Movies
               </v-list-item-title>
             </v-list-item-content>
           </v-list-item>

@@ -9,7 +9,7 @@
       <v-toolbar-title>GOOD MOVIES</v-toolbar-title>
 
       <v-spacer></v-spacer>
-      <div v-for="item in draweritens" :key="item.title" >
+      <div class="buttons" v-for="item in draweritens" :key="item.title" >
             <v-btn @click="$router.push(item.url)"
             style = "background-color:red" 
             class="white--text">
@@ -50,3 +50,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.buttons{
+  margin: 0 10px;
+}
+</style>

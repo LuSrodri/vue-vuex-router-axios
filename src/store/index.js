@@ -8,11 +8,16 @@ Vue.use(Vuex);
 
 //to handle state
 const state = {
+  parameter:'movies',
   posts: []
 }
 
 //to handle state
-const getters = {}
+const getters = {
+  postsCount: state => {
+    return state.posts.d.length
+  }
+}
 
 //to handle actions
 const actions = {
@@ -20,15 +25,14 @@ const actions = {
     var options = {
       method: 'GET',
       url: 'https://imdb8.p.rapidapi.com/auto-complete',
-      params: { q: 'movies' },
+      params: { q: state.parameter },
       headers: { 'x-rapidapi-host': 'imdb8.p.rapidapi.com', 'x-rapidapi-key': '8a228d67a9msh2730af094091770p154764jsn567d96812284' }
     };
 
     axios.request(options).then(function (response) {
-      console.log(response.data)
       commit('SET_POSTS', response.data)
     }).catch(function () {
-      console.log("DEU RUIM !!!!!!!!!!!!!!!!!!!!!!!!");
+      console.log("Erro");
     });
   }
 }

@@ -9,12 +9,6 @@
         :src=movie.i.imageUrl
         height="250px"></v-img>
         <br/>
-        <!-- <div>
-            <v-btn style = "background-color:#008000"
-            class="white--text"
-            :href=food.link
-            target="_blank"> Link da receita </v-btn>
-        </div> -->
         <br/>
         <p
         class="texto"
