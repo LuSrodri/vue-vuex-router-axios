@@ -4,7 +4,7 @@
       <h1 style="color: red">Movies</h1>
       <h2 >Total itens: {{countt}}</h2>
       <v-row>
-        <v-col v-for="movie in posts.d" :key="movie.id" cols="4">
+        <v-col v-for="movie in posts.d" :key="movie.id" cols="5">
           <Modelcard :movie="movie"></Modelcard>
         </v-col>
       </v-row>
